@@ -11,27 +11,27 @@
 }
 
 a {
-    font-family: Avenir, medium;
+    font-family: 'Avenir', medium;
     font-size: 16px;
 }
 
 h1 {
     font-size: 80px;
     width: 645px;
-    font-family: Helvetica;
+    font-family: 'Helvetica';
     font-weight: bold;
     line-height: 88px;
 }
 
 h2 {
     font-size: 40px;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-weight: bold;
     line-height: 52px;
 }
 
 p {
-    font-family: Avenir, medium;
+    font-family: 'Avenir', medium;
     font-size: 18px;
     line-height: 29px;
 }
@@ -100,6 +100,10 @@ nav {
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
     border-radius: 50px;
     margin-right: 128px;
+    font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
 }
 
 header {
@@ -225,7 +229,7 @@ header {
     width: 200px;
     margin-left: 172px;
     font-size: 24px;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-weight: 400;
     margin-bottom: 20px;
     margin-top: 53px;
@@ -277,23 +281,59 @@ header {
     background-image: cover;
 }
 
-.backgr1 {
+.feature_btn {
+
+    border: none;
+}
+
+.backgr1,
+.backgr2,
+.backgr3,
+.backgr4 {
+    position: relative;
+    z-index: 0;
+}
+
+.feature_btn {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.feature-oposit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 10%;
+}
+
+
+.backgr1>.feature-oposit {
     background-color: #68C9BA;
+
 }
 
-.backgr2 {
+.backgr2>.feature-oposit {
     background-color: #9C69E2;
+
 }
 
-.backgr3 {
+.backgr3>.feature-oposit {
 
     background-color: #F063B8;
+    
 }
 
-.backgr4 {
+.backgr4>.feature-oposit {
     background-color: #2D9CDB;
+
 }
 
+.feature_btn img,
+.nav_btn img {
+    width: 20px;
+    margin: auto;
+    margin-left: 20px;
+
+}
 .section-carousel {
 
     margin-top: 148px;
@@ -342,6 +382,9 @@ header {
     position: relative;
     overflow: hidden;
     margin-bottom: 63px;
+    box-shadow: 5px 5px 38px 11px rgba(66, 68, 90, 1);
+        ;
+        border-radius: 50px;
 }
 
 .carousel-track {
@@ -408,7 +451,263 @@ header {
     display: none;
 }
 
-footer {
+.hr {
 
-    height: 70px;
+
+    height: 2px;
+    background: #9C69E2;
+    opacity: 0.2;
+    margin-top: 152px;
+}
+
+.footer {
+    height: 750px;
+    margin-top: 100px;
+}
+
+.footer-nav-wrapper {
+    display: flex;
+
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 150px;
+}
+
+.footer-name {
+    width: 405px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    font-family: 'Helvetica';
+    margin-bottom: 20px;
+    margin-right: 302px;
+    color: #212353;
+}
+
+.footer-nav-p {
+    font-size: 18px;
+    line-height: 160%;
+    font-family: 'Avenir';
+    font-weight: 500;
+    width: 584px;
+    color: #4B5D68;
+}
+
+.btn-footer-learn {
+    background-color: rgba(240, 99, 184, 1);
+    color: rgba(255, 255, 255, 1);
+    width: 170px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: 'Avenir';
+}
+
+.btn-footer-demo {
+
+    background-color: #FFFFFF;
+    color: rgba(33, 35, 83, 1);
+    width: 210px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 900;
+    font-family: 'Avenir';
+    letter-spacing: 0.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.line>img {
+    width: 20px;
+    margin: auto;
+}
+
+.btn-footer-demo-text {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 160%;
+    color: #212353;
+}
+
+.footer_main-head {
+    display: flex;
+    width: 100%;
+
+    align-items: center;
+
+
+}
+
+.footer_main-picture {
+    display: flex;
+    width: 49px;
+    align-items: flex-end;
+}
+
+.nav_main_head-h3 {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Avenir';
+    width: 153px;
+    margin-left: 20px;
+    margin-right: 253px;
+    color: #212353;
+}
+
+.footer-head-about,
+.footer-head-help,
+.footer-head-socMedia {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 160%;
+    color: #212353;
+    margin-right: 164px;
+    width: 52px;
+}
+
+.footer-head-socMedia {
+    width: 170px;
+}
+
+.footer_main-info {
+    display: flex;
+    margin-top: 35px;
+}
+
+.footer_main_info-address {
+    margin-top: 30px;
+    width: 335px;
+    margin-right: 140px;
+}
+
+.foter_main_info_address-city {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    color: #212353;
+
+}
+
+span {
+    margin-top: 10px;
+}
+
+.footer-link-contact>a {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    color: #212353;
+    margin-top: 10xp;
+    height: 60px;
+}
+
+.footer_main_info-help,
+.footer_main_info-about {
+    margin-right: 50px;
+    width: 166px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 250%;
+    color: #212353;
+}
+
+.footer-food {
+    margin-top: 93px;
+    display: flex;
+}
+
+.footer_food-info-company {
+    width: 380px;
+    margin-right: 697px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+
+
+    letter-spacing: 0.01em;
+
+    color: #212353;
+    margin-bottom: 96px;
+}
+
+.social-icon {
+    display: flex;
+
+}
+
+.facebook,
+.twitter,
+.instagram {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #212353;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-right: 14px;
+    opacity: 10%;
+
+}
+
+.chat {
+    width: 60px;
+    height: 60px;
+    position: relative;
+
+}
+
+.icon-chat {
+    width: 30px;
+    height: 36px;
+    opacity: 100%;
+    position: absolute;
+    left: 27%;
+    top: 20%;
+    transform: traslate (27%, 20%);
+}
+
+.chat-backColor {
+    background-color: #9C69E2;
+    width: 100%;
+    height: 100%;
+    opacity: 20%;
+    border-radius: 50%;
+}
+
+.icon-center {
+    margin: auto;
+}
+
+.icon-fb {
+    width: 10px;
+    height: 21px;
+}
+
+.icon-twitter {
+    width: 18px;
+    height: 15px;
+}
+
+.icon-instagram {
+    width: 16px;
+    height: 16px;
 }
