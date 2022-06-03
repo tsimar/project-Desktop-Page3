@@ -257,13 +257,6 @@ header {
     margin-bottom: 20px;
 }
 
-.feature-div-form>button {
-    width: 150px;
-    margin-left: 172px;
-    margin-bottom: 33px;
-}
-
-
 
 .feature-div-form-picture {
     position: absolute;
@@ -280,10 +273,7 @@ header {
     background-size: cover;
 }
 
-.feature_btn {
 
-    border: none;
-}
 
 .backgr1,
 .backgr2,
@@ -295,6 +285,10 @@ header {
 
 .feature_btn {
     background-color: rgba(0, 0, 0, 0);
+    border: none;
+        width: 150px;
+        margin-left: 172px;
+        margin-bottom: 33px;
 }
 
 .feature-oposit {
